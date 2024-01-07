@@ -5,23 +5,23 @@
   font-family: Lato, sans-serif;
 }
 
-.matrix-eisenhower {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix-eisenhower img {
+.header img {
   width: 100%;
 }
 
-.matrix-eisenhower .matrix-eisenhower__link {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .matrix-eisenhower {
+  .header {
     text-align: center;
   }
 }
@@ -32,13 +32,13 @@
   margin: 0 auto 0;
 }
 
-.task {
+.input[type="text"], .item__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.add-section__inner {
   display: flex;
 }
 
@@ -104,7 +104,7 @@
   margin: 0 0 20px;
 }
 
-.item__input.task_new {
+.item__input.add-section__input {
   width: 318px;
 }
 
@@ -134,17 +134,17 @@
   width: 226px;
 }
 
-.item > .task.input {
+.item > .input[type="text"] {
   width: 226px
 }
 
-.item__button.delete .item__icon {
+.button__delete .item__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.item__button.delete .item__icon:hover {
+.button__delete .item__icon:hover {
   transform: rotateZ(0);
 }
 
@@ -155,11 +155,11 @@
 }
 
 /* Edit Task */
-.tasks-list .item .task.input {
+.tasks-list .item .input[type="text"] {
   display: none
 }
 
-.tasks-list .item.tasks-list_edit-mode .task.input {
+.tasks-list .item.tasks-list_edit-mode .input[type="text"] {
   display: inline-block;
   width: 224px
 }
