@@ -166,3 +166,7 @@
 .tasks-list .item.tasks-list_edit .item__name {
   display: none;
 }
+
+.title_hidden {
+  display: none;
+}

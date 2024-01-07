@@ -10,7 +10,7 @@
 </head>
 <body class="page">
   <article class="matrix-eisenhower">
-    <img class="matrix-eisenhower__img" src="./eisenhower-matrix.jpg">
+    <img class="matrix-eisenhower__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
     <aside class="more-info">
       <a
         class="matrix-eisenhower__link"
@@ -20,15 +20,16 @@
     </aside>
   </article>
   <main class="main">
+    <h1 class="title_hidden"></h1>
     <section class="add-section" id="add-section">
-      <h1 class="add-section__label">Add Item</h1>
+      <h2 class="add-section__label">Add Item</h2>
       <div class="add-section__inner">
         <input id="new-task" class="add-section__input input" type="text">
         <button class="add-section__btn btn">Add</button>
       </div>
     </section>
     <section>
-      <h1 class="title">Todo</h1>
+      <h2 class="title">Todo</h2>
       <ul class="tasks-list" id="todo-list">
         <li class="tasks-list__item item">
           <input class="item__input input" type="checkbox">
@@ -36,7 +37,7 @@
           <input type="text" class="item__input input">
           <button class="btn btn__edit">Edit</button>
           <button class="btn btn__delete">
-            <img class="item__icon" src="./remove.svg">
+            <img class="item__icon" src="./remove.svg" alt="Remove icon">
           </button>
         </li>
         <li class="tasks-list__item tasks-list_edit item">
@@ -45,13 +46,13 @@
           <input type="text" value="Go Shopping" class="item__input input">
           <button class="btn btn__edit">Save</button>
           <button class="btn btn__delete">
-            <img class="item__icon" src="./remove.svg">
+            <img class="item__icon" src="./remove.svg" alt="Remove icon">
           </button>
         </li>
       </ul>
     </section>
     <section>
-      <h1 class="title">Completed</h1>
+      <h2 class="title">Completed</h2>
       <ul class="tasks-list completed-list" id="completed-list">
         <li class="tasks-list__item item">
           <input class="item__input input" type="checkbox" checked>
@@ -59,7 +60,7 @@
           <input type="text" class="item__input task input">
           <button class="btn btn__edit">Edit</button>
           <button class="btn btn__delete">
-            <img class="item__icon" src="./remove.svg">
+            <img class="item__icon" src="./remove.svg" alt="Remove icon">
           </button>
         </li>
       </ul>
