@@ -32,7 +32,7 @@
   margin: 0 auto 0;
 }
 
-.input[type="text"], .item__name {
+.input[type="text"], .tasks-list__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -47,15 +47,15 @@
   padding: 0px;
 }
 
-.item, .title {
+.tasks-list__item, .tasks__title {
   list-style: none;
 }
 
-.input, .btn {
+.input, .tasks-list__btn {
   outline: none;
 }
 
-.btn {
+.tasks-list__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -65,12 +65,12 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.tasks-list__btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-.title,
+.tasks__title,
 .add-section__label {
   color: #333;
   font-weight: 700;
@@ -94,7 +94,7 @@
   color: #888;
 }
 
-.item__input[type="text"]:focus {
+.tasks-list__input[type="text"]:focus {
   color: #333;
 }
 
@@ -104,12 +104,12 @@
   margin: 0 0 20px;
 }
 
-.item__input.add-section__input {
+.tasks-list__input.add-section__input {
   width: 318px;
 }
 
 /* Task list */
-.item {
+.tasks-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -118,55 +118,55 @@
   align-items: center;
 }
 
-.item > * {
+.tasks-list__item > * {
   vertical-align: middle;
 }
 
-.item > .item__input[type="checkbox"] {
+.tasks-list__item > .tasks-list__input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.item > .item__name {
+.tasks-list__item > .tasks-list__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.item > .input[type="text"] {
+.tasks-list__item > .input[type="text"] {
   width: 226px;
 }
 
-.btn__delete .item__icon {
+.btn-delete .tasks-list__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn__delete .item__icon:hover {
+.btn-delete .tasks-list__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-list .item__name {
+.tasks-list--completed .tasks-list__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks-list .item .input[type="text"] {
+.tasks-list .tasks-list__item .input[type="text"] {
   display: none;
 }
 
-.tasks-list .item.tasks-list_edit .input[type="text"] {
+.tasks-list .tasks-list__item.tasks-list_edit .input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list .item.tasks-list_edit .item__name {
+.tasks-list .tasks-list__item.tasks-list_edit .tasks-list__name {
   display: none;
 }
 
-.title_hidden {
+.title--hidden {
   display: none;
 }
