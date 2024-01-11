@@ -168,3 +168,7 @@
 .list .item.edit-mode .label {
   display: none;
 }
+
+.title--hidden {
+  display: none;
+}
